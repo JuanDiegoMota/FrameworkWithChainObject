@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import Core.Common;
+import Core.CommonPage;
 
 public class BuyProductPage {
 	WebDriver driver;
@@ -19,8 +19,8 @@ public class BuyProductPage {
 	}
 	
 	public void addProductToCar(){
-		Common.ExplicitWait(driver, buyButton);
-		Common.OnClick(buyButton);
+		//Common.ExplicitWait(driver, buyButton);
+		CommonPage.OnClick(buyButton);
 	}
 	
 	

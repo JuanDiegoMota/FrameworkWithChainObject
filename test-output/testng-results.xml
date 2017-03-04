@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="SuiteForAppTest" duration-ms="9989" started-at="2017-03-03T21:28:30Z" finished-at="2017-03-03T21:28:40Z">
+  <suite name="SuiteForAppTest" duration-ms="14384" started-at="2017-03-04T19:10:18Z" finished-at="2017-03-04T19:10:32Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="9989" started-at="2017-03-03T21:28:30Z" finished-at="2017-03-03T21:28:40Z">
+    <test name="Test" duration-ms="14384" started-at="2017-03-04T19:10:18Z" finished-at="2017-03-04T19:10:32Z">
       <class name="Tests.AppTest">
-        <test-method status="PASS" signature="navigate(java.lang.String)[pri:0, instance:Tests.AppTest@306e95ec]" name="navigate" is-config="true" duration-ms="4674" started-at="2017-03-03T16:28:30Z" finished-at="2017-03-03T16:28:34Z">
+        <test-method status="PASS" signature="navigate(java.lang.String)[pri:0, instance:Tests.AppTest@5d0a1059]" name="navigate" is-config="true" duration-ms="4896" started-at="2017-03-04T14:10:18Z" finished-at="2017-03-04T14:10:23Z">
           <params>
             <param index="0">
               <value>
@@ -18,22 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigate -->
-        <test-method status="PASS" signature="goToLogin()[pri:0, instance:Tests.AppTest@306e95ec]" name="goToLogin" duration-ms="93" started-at="2017-03-03T16:28:34Z" finished-at="2017-03-03T16:28:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToLogin -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:Tests.AppTest@306e95ec]" name="OnFailure" is-config="true" duration-ms="1" started-at="2017-03-03T16:28:34Z" finished-at="2017-03-03T16:28:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=goToLogin status=SUCCESS method=AppTest.goToLogin()[pri:0, instance:Tests.AppTest@306e95ec] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="initSession(java.lang.String, java.lang.String)[pri:0, instance:Tests.AppTest@306e95ec]" name="initSession" duration-ms="2343" started-at="2017-03-03T16:28:34Z" finished-at="2017-03-03T16:28:37Z">
+        <test-method status="PASS" signature="buyProduct(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.AppTest@5d0a1059]" name="buyProduct" duration-ms="9467" started-at="2017-03-04T14:10:23Z" finished-at="2017-03-04T14:10:32Z">
           <params>
             <param index="0">
               <value>
@@ -45,24 +30,7 @@
                 <![CDATA[123456]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initSession -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:Tests.AppTest@306e95ec]" name="OnFailure" is-config="true" duration-ms="1" started-at="2017-03-03T16:28:37Z" finished-at="2017-03-03T16:28:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=initSession status=SUCCESS method=AppTest.initSession(java.lang.String, java.lang.String)[pri:0, instance:Tests.AppTest@306e95ec] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="searchProductInStore(java.lang.String)[pri:0, instance:Tests.AppTest@306e95ec]" name="searchProductInStore" duration-ms="132" started-at="2017-03-03T16:28:37Z" finished-at="2017-03-03T16:28:37Z">
-          <params>
-            <param index="0">
+            <param index="2">
               <value>
                 <![CDATA[dress]]>
               </value>
@@ -70,48 +38,22 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchProductInStore -->
-        <test-method status="PASS" signature="selectProduct()[pri:0, instance:Tests.AppTest@306e95ec]" name="selectProduct" duration-ms="1314" started-at="2017-03-03T16:28:37Z" finished-at="2017-03-03T16:28:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectProduct -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:Tests.AppTest@306e95ec]" name="OnFailure" is-config="true" duration-ms="0" started-at="2017-03-03T16:28:37Z" finished-at="2017-03-03T16:28:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=searchProductInStore status=SUCCESS method=AppTest.searchProductInStore(java.lang.String)[pri:0, instance:Tests.AppTest@306e95ec] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="buyProduct()[pri:0, instance:Tests.AppTest@306e95ec]" name="buyProduct" duration-ms="1397" started-at="2017-03-03T16:28:38Z" finished-at="2017-03-03T16:28:40Z">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- buyProduct -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:Tests.AppTest@306e95ec]" name="OnFailure" is-config="true" duration-ms="0" started-at="2017-03-03T16:28:38Z" finished-at="2017-03-03T16:28:38Z">
+        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:Tests.AppTest@5d0a1059]" name="OnFailure" is-config="true" duration-ms="2" started-at="2017-03-04T14:10:32Z" finished-at="2017-03-04T14:10:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=selectProduct status=SUCCESS method=AppTest.selectProduct()[pri:0, instance:Tests.AppTest@306e95ec] output={null}]]]>
+                <![CDATA[[TestResult name=buyProduct status=SUCCESS method=AppTest.buyProduct(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.AppTest@5d0a1059] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:Tests.AppTest@306e95ec]" name="OnFailure" is-config="true" duration-ms="1" started-at="2017-03-03T16:28:40Z" finished-at="2017-03-03T16:28:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=buyProduct status=SUCCESS method=AppTest.buyProduct()[pri:0, instance:Tests.AppTest@306e95ec] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="executeClose()[pri:0, instance:Tests.AppTest@5d0a1059]" name="executeClose" is-config="true" duration-ms="1404" started-at="2017-03-04T14:10:32Z" finished-at="2017-03-04T14:10:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OnFailure -->
+        </test-method> <!-- executeClose -->
       </class> <!-- Tests.AppTest -->
     </test> <!-- Test -->
   </suite> <!-- SuiteForAppTest -->

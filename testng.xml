@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="SuiteForAppTest">
+  <parameter name="nameBrowser" value="firefox" />
+  <parameter name="URL" value="http://automationpractice.com" />
   <parameter name="mail" value="helloword@gmail.com" />
   <parameter name="pass" value="123456" />
   <parameter name="nameProduct" value="dress" />
-  <parameter name="URL" value="http://automationpractice.com" />
+ 
   
  <test name="Test">
     <classes>

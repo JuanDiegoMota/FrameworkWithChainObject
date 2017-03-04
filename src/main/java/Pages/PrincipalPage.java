@@ -5,10 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import Core.Common;
+import Core.CommonPage;
 
 public class PrincipalPage {
-	private WebDriver driver;
+	protected WebDriver driver;
 	
 	@FindBy(xpath="//div[contains(@class, 'header_user_info')]")
 	private WebElement signInButton;
@@ -19,6 +19,6 @@ public class PrincipalPage {
 	}
 	
 	public void goToMyAccount(){
-		Common.OnClick(signInButton);
+		CommonPage.OnClick(signInButton);
 	}
 }

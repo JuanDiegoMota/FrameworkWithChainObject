@@ -5,10 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import Core.Common;
+import Core.CommonPage;
 
 public class SearchProductPage {
-	private WebDriver driver;
+	protected WebDriver driver;
 	
 	@FindBy(css="#search_query_top")
 	private WebElement inputNameProduct;
@@ -22,8 +22,8 @@ public class SearchProductPage {
 	}
 	
 	public void searchProduct(String product){
-		Common.ImplicitWait(driver);
-		Common.setText(inputNameProduct, product);
-		Common.OnClick(searchProductButton);
+		//Common.ImplicitWait(driver);
+		CommonPage.setText(inputNameProduct, product);
+		CommonPage.OnClick(searchProductButton);
 	}
 }

@@ -5,10 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import Core.Common;
+import Core.CommonPage;
 
 public class ProductsResultsPage {
-	private WebDriver driver;
+	protected WebDriver driver;
 	
 	@FindBy(xpath=".//*[@id='center_column']/ul/li[4]/div/div[2]/h5/a")
 	private WebElement product;
@@ -19,8 +19,8 @@ public class ProductsResultsPage {
 	}
 	
 	public void selectProduct(){
-		Common.ExplicitWait(driver, product);
-		Common.OnClick(product);
+		//Common.ExplicitWait(driver, product);
+		CommonPage.OnClick(product);
 	}
 	
 	

@@ -2,7 +2,7 @@ package Chain;
 
 import org.openqa.selenium.WebDriver;
 
-import Core.Common;
+import Core.CommonPage;
 import Pages.BuyProductPage;
 import Pages.LoginPage;
 import Pages.PrincipalPage;
@@ -33,7 +33,7 @@ public class ChainPage {
 	
 	public void inputToMyAccount(String email, String pass){
 		login.setLogin(email, pass);
-		Common.ImplicitWait(driver);
+		CommonPage.ImplicitWait(driver);
 	}
 	
 	public void searchProductInStore(String product){
@@ -46,5 +46,24 @@ public class ChainPage {
 	
 	public void buyProduct(){
 		buyProduct.addProductToCar();
+	}
+	
+	
+	public void inputLoginSucced(String email, String pass){
+		goToLogin();
+		inputToMyAccount(email, pass);
+	}
+	
+	public void searchAndFoundProduct(String product){
+		searchProductInStore(product);
+		selectProductFounded();
+	}
+	
+	public void buyProductFounded(String email, String pass, String product){
+		inputLoginSucced(email, pass);
+	
+		searchAndFoundProduct(product);
+		
+		buyProduct();
 	}
 }
