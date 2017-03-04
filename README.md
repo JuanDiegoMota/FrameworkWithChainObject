@@ -7,14 +7,7 @@
 <p>La estructura del proyecto es la siguiente:</p>
 <li>
 <ul>Package Chain</ul>
-  <li>
-	<ul>Chain</ul>
-	<p>Clase utilizada como responsable de la interaccion entre las Pages Objects y la clase Test.</p>
-</li>
 <ul>Package Core</ul>
-
 <ul>Package Utils</ul>
-
 <ul>Package Tests</ul>
-
 </li>
